@@ -21,27 +21,14 @@ public class TreeNode<T> implements Position<T>{
         return this.element
     }
 
-    public TreeNode<T> getParent(){
-        return this.parent;
-    }
+    // Accessors
+    public TreeNode<T> getParent() { return parent; }
+    public TreeNode<T> getLeft() { return left; }
+    public TreeNode<T> getRight() { return right; }
 
-    public void setParent(TreeNode<T> parent){
-        this.parent = parent;
-    }
-
-    public TreeNode<T> getLeft(){
-        return this.left;
-    }
-
-    public void setLeft(TreeNode<T> node){
-        this.left = node;
-    }
-
-    public TreeNode<T> getRight(){
-        return this.right;
-    }
-
-    public void setRight(TreeNode<T> node){
-        this.right = node;
-    }
+    // Mutators
+    public void setElement(T element) { this.element = element; }
+    public void setParent(TreeNode<T> parent) { this.parent = parent; }
+    public void setLeft(TreeNode<T> left) { this.left = left; }
+    public void setRight(TreeNode<T> right) { this.right = right; }
 }
